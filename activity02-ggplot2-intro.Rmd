@@ -21,14 +21,14 @@ The `penguins` data set contains the following variables:
 
 All artwork by [@allison_horst](https://twitter.com/allison_horst).
 
-- `species`:
-- `island`:
-- `bill_length_mm`:
-- `bill_depth_mm`:
-- `flipper_length_mm`:
-- `body_mass_g`:
-- `sex`:
-- `year`:
+- `species`: noting penguin species
+- `island`: noting either Biscoe, Dream, or Torgersen Islands in Palmer Archipelago
+- `bill_length_mm`: noting bill length in mm of penguin
+- `bill_depth_mm`: noting bill depth in mm of penguin
+- `flipper_length_mm`: noting flipper length in mm of penguin
+- `body_mass_g`: noting penguin body mass in g
+- `sex`: noting pengyin sex
+- `year`: noting year of study (2007, 2008, or 2009)
 
 We will need to install `{palmerpenguins}` in your RStudio session to be able to use this.
 There are a couple of ways to do this, but my preferred method is to type the following in your **Console** pane (this should be the pane below this open `.Rmd` file).
@@ -120,7 +120,8 @@ ggplot(data = penguins, mapping = aes(x = flipper_length_mm, y = species, ___ = 
 
 Now, comment on what you notice from these boxplots.
 
-**Response**:
+
+**Response**: First I tried the color aesthetic, and then I tried the fill aesthetic. each species of penguin in the dataset was assigned a different color for both aesthetics, except the fill aesthetic colored the whole boxplot. Also, it appears that Gentoo species has a longer flipper length than both Adelie and Chinstrap species.
 
 
 Another way to visualize distributions are with points.
@@ -137,7 +138,7 @@ Comment on the strengths of the boxplot compared to the jitterplot and vice vers
 That is, what can you easily determine by looking at the boxplot?
 What about the jitterplot?
 
-**Response**:
+**Response**: The boxplot is nicer to look at to get a more organized and overall idea of the distribution of the data. You can easily determine if there are outliers, and things like Q1, median, and Q3. The jitterplot is nice to look at because it shows you what points each distribution is made of, however it is much harder to determine other information and it is much more disorganized in my opinion.
 
 
 Knit, then stage everything listed in your **Git** pane, commit (with a meaningful commit message), and push  to your GitHub repo.
