@@ -75,7 +75,7 @@ Then, either scroll or search for `palmerpenguins`.
 Note that this tab is another place where you can install packages.
 In practice, you install a package once (or each time an update is made), then load it (using `library`) each time you start RStudio.
 
-In the code chunk below, I load the package, and show a snippet of the `penguins` dataset.
+In      the code chunk below, I load the package, and show a snippet of the `penguins` dataset.
 
 ```{r palmerpenguins}
 library(palmerpenguins)
